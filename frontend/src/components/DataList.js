@@ -6,7 +6,7 @@ console.log("entra");
     const [list, setList] = useState([]);
     useEffect(()=>{
         loadData();
-    }, [])
+    }, [list])
 
     const loadData = async () => {
         const res = await getDataList();
